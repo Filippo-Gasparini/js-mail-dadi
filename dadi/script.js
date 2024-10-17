@@ -28,3 +28,13 @@ let puntoComputer = generaNumero();
 console.log (`Punteggio del giocatore ${puntoGiocatore}`);
 console.log (`Punteggio del computer ${puntoComputer}`);
 
+
+// assegno il vincitore 
+
+if (puntoGiocatore > puntoComputer) {
+    console.log ('Il vincitore è il giocatore');
+
+} else if (puntoComputer > puntoGiocatore) {
+    console.log ('Il vincitore è il computer');
+}
+  
