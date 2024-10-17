@@ -18,9 +18,13 @@ function generaNumero() {
     return Math.floor(Math.random()*6) +1 ;
 }
 
-// Lancia i dadi per il giocatore e il computer
+// Lancio i dadi per il giocatore e il computer
 let puntoGiocatore = generaNumero();
 let puntoComputer = generaNumero();
 
 
+// punteggio del computer e giocatore
+
+console.log (`Punteggio del giocatore ${puntoGiocatore}`);
+console.log (`Punteggio del computer ${puntoComputer}`);
 
