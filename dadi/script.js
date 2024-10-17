@@ -1,4 +1,4 @@
-console.log ('Dadi')
+console.log ('Dadi');
 
 
 
@@ -13,12 +13,14 @@ console.log ('Dadi')
 
 // scrivo i numeri da 1 a 6
 
-for (let i = 0; i <= 6; i++) {
-    console.log(i)
-
-// chiedo il numero nell'alert
-    const number1 = prompt ('Genera un numero per il giocatore')
-    const number2 = prompt ('Genera un numero per il computer')
-
-    let n= (math.random() *6)
+// Funzione per generare un numero casuale tra 1 e 6
+function generaNumero() {
+    return Math.floor(Math.random()*6) +1 ;
 }
+
+// Lancia i dadi per il giocatore e il computer
+let puntoGiocatore = generaNumero();
+let puntoComputer = generaNumero();
+
+
+
